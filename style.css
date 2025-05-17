@@ -7,3 +7,36 @@
 html{
     font-size: 62.5%;
 }
+
+:root{
+    --primary-font: "Manrope", sans-serif;
+    --secondary-font: "Archivo Black", sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+.hero-section{
+    display: flex;
+    background-image: url("./images/hero-4.jpg");
+    background-size: cover;
+    height: 95vh;
+}
+
+.header{
+    display: flex;
+}
+
+.logo a img{
+    height: 5rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.call-to-action span{
+    display: block;
+}
