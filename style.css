@@ -23,56 +23,98 @@ body {
   font-family: var(--primary-font);
 }
 .hero-section {
-  background-image: url("./images/hero-4.jpg");
+  background-image: url("./images/hero-2.jpg");
+  background-repeat: no-repeat;
+  border-radius: 1.5rem;
   background-size: cover;
   height: 97vh;
+  width: 100%;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, transparent 80%);
+  z-index: 1;
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 8rem;
-  border: 2px solid red;
+  padding: 1rem 5rem;
+  z-index: 3;
 }
-
-/* .logo a {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  text-decoration: none;
-  color: inherit;
-}
-
-.logo h1 {
-  font-size: 2.4rem;
-  white-space: nowrap;
-} */
 
 .logo a{
   display: flex;
   align-items: center;
   text-decoration: none;
-  border: 2px solid red;
 }
 
 .logo h1{
   font-family: var(--secondary-font);
-  color: var(--color-5);
+  color: var(--color-2);
   font-weight: 500;
-  white-space: nowrap;
+  font-size: 3rem;
 }
 
 .navigation-menu-list{
-    text-decoration: none;
     list-style-type: none;
     display: flex;
+    padding: 1.4rem 1.5rem;
+    background-color: var(--color-3);
+    border-radius: 2.3rem;
     gap: 1rem;
-    border: 2px solid red;
+}
+
+.menu-item{
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-2);
+  padding: .5rem .5rem;
+  border-radius: 1rem;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+.home-menu-item{
+  background-color: var(--color-4);
+}
+
+.menu-item:hover{
+  background-color: var(--color-2);
+  color: #273f4f;
 }
 
 .call-to-action{
+    color: var(--color-2);
     display: flex;
-    gap: 1rem;
-    border: 2px solid red;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.7rem;
 }
+
+.cta-button{
+  padding: 1rem 2rem;
+  background-color: #fe7743;
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+.cta-button:hover{
+  background-color: transparent;
+  outline: 2px solid var(--color-2);
+}
+
