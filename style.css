@@ -16,6 +16,7 @@ html {
   --color-3: #8f8389;
   --color-4: #273f4f;
   --color-5: #000000;
+  --color-6: white;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 20%, transparent 80%), url("./images/hero-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 98vh;
   width: 100%;
 }
 
@@ -164,7 +165,7 @@ body {
   outline: 2px solid var(--color-2);
 }
 
-/* Header media query */
+/* Header media queries */
 
 @media screen and (max-width: 53.125em) {
   .motto {
@@ -204,5 +205,99 @@ body {
 
 /* End of header media query */
 
+/* Start of main hero styling */
+
+.main-hero{
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  margin-top: 5.5rem;
+  margin-inline: 9rem;
+  padding: 2rem 4rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  color: var(--color-2);
+}
+
+.hero-title{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: .6rem;
+}
+
+.hero-title-sub{
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.hero-title-main{
+  font-size: 4rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+}
+
+.hero-title-sub-name{
+  text-transform: uppercase;
+  color: var(--color-1);
+}
+
+.property-btns-list{
+  display: flex;
+  gap: 2rem;
+  margin-top: 10rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.property-btn-link{
+  text-decoration: none;
+  color: var(--color-1);
+  font-weight: 600;
+  background-color: var(--color-2);
+  padding: 0 1.4rem;
+  border-radius: 1rem;
+}
+
+.hero-section-form{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+.hero-section-form-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section-form-column label{
+  font-weight: 800;  
+}
+
+.hero-section-dropdown{
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  border: 1px solid var(--color-2);
+  color: var(--color-2);
+  text-transform: capitalize;
+}
+
+.hero-section-submit-btn{
+  padding: 0 4rem;
+  height: 4rem;
+  color: var(--color-2);
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid var(--color-2);
+  border-radius: 3rem;
+  text-transform: capitalize;
+}
+
+/* End of main hero stying */
 
 /* End of Hero-Section & Header */
