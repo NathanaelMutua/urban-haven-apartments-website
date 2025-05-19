@@ -22,37 +22,25 @@ body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
 }
-.hero-section {
-  background-image: url("./images/hero-2.jpg");
-  background-repeat: no-repeat;
-  border-radius: 1.5rem;
-  background-size: cover;
-  height: 97vh;
-  width: 100%;
-}
 
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Start of Hero-Section & Header */
+.hero-section {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 20%, transparent 80%), url("./images/hero-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.8) 20%,
-    transparent 80%
-  );
-  z-index: 1;
 }
 
 .header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
-  z-index: 3;
+  padding: 1rem 2rem;
+}
+
+.logo img{
+  height: 4rem;
 }
 
 .logo a {
@@ -65,26 +53,34 @@ body {
   font-family: var(--secondary-font);
   color: var(--color-2);
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.navigation-menu{
+  display: flex;
+  align-items: center;
 }
 
 .navigation-menu-list {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  padding: 1.4rem 1.5rem;
+  padding: .6rem 1rem;
   background-color: var(--color-3);
-  border-radius: 2.3rem;
-  gap: 1rem;
+  border-radius: 1.5rem;
+  gap: .4rem;
 }
 
 .menu-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
   text-transform: capitalize;
-  font-size: 1.7rem;
+  font-size: 1rem;
+  text-align: center;
   text-decoration: none;
   font-weight: 700;
   color: var(--color-2);
-  padding: 0.5rem 0.5rem;
+  padding: 0 .4rem;
   border-radius: 1rem;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -99,25 +95,64 @@ body {
   color: var(--color-4);
 }
 
+.navigation-menu-list-small{
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: .2rem 1rem;
+  background-color: var(--color-3);
+  border-radius: 1.5rem;
+  gap: .4rem;
+}
+
+/* .navigation-menu-list-small .menu-item{
+  border-radius: 50%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: .5rem;
+} */
+
+.menu-item-icon{
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-2);
+  padding: .4rem .4rem;
+  border-radius: .4rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.menu-item-icon:hover{
+  background-color: var(--color-2);
+  color: var(--color-4);
+}
+
 .call-to-action {
   color: var(--color-2);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-size: 1.7rem;
+  gap: .6rem;
+  font-size: 1rem;
 }
 
 .motto {
-  padding-left: 1rem;
+  padding-left: .5rem;
 }
 
 .cta-button {
-  padding: 1rem 2rem;
-  margin-left: 2rem;
+  padding: .5rem 1rem;
   background-color: #fe7743;
   border-radius: 2rem;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
   cursor: pointer;
   transition-duration: 0.4s;
@@ -131,38 +166,43 @@ body {
 
 /* Header media query */
 
-@media screen and (max-width: 96.875em) {
-  .navigation-menu {
-    display: none;
-  }
+@media screen and (max-width: 53.125em) {
   .motto {
     display: none;
   }
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+  .logo img {
+    height: 2.5rem;
+  }
 }
 
-@media screen and (min-width: 96.875em) {
-  .navigation-menu-small {
+@media screen and (max-width: 37.5em) {
+  .navigation-menu{
     display: none;
   }
 }
 
-@media screen and (max-width: 65em) {
-  .navigation-menu-small {
+@media screen and (min-width: 37.5em){
+  .navigation-menu-small{
     display: none;
-  }
-  .logo {
-    justify-content: center;
   }
 }
 
-@media screen and (max-width: 34.375em) {
-  .cta-button {
+@media screen and (max-width: 30em){
+  .navigation-menu-small{
     display: none;
   }
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
+}
+
+@media screen and (max-width: 15em){
+  .cta-button{
+    display: none;
   }
 }
 
 /* End of header media query */
+
+
+/* End of Hero-Section & Header */
