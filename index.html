@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Hero section starts here -->
-    <section class="hero-section">
+    <section class="hero-section" id="head-hero-section">
       <!-- Header section starts here -->
       <header class="header" id="header">
         <div class="logo">
@@ -41,16 +41,16 @@
               <a href="#" class="menu-item home-menu-item">home</a>
             </li>
             <li>
-              <a href="#" class="menu-item">about</a>
+              <a href="#head-about-section" class="menu-item">about</a>
             </li>
             <li>
-              <a href="#" class="menu-item">listings</a>
+              <a href="#head-property-section" class="menu-item">listings</a>
             </li>
             <li>
-              <a href="#" class="menu-item">amenities</a>
+              <a href="#head-amenities-section" class="menu-item">amenities</a>
             </li>
             <li>
-              <a href="#" class="menu-item">contact</a>
+              <a href="#head-contact-section" class="menu-item">contact</a>
             </li>
           </ol>
         </nav>
@@ -106,19 +106,29 @@
         <div class="property-buttons">
           <ul class="property-btns-list">
             <li class="property-btn">
-              <a href="#" class="property-btn-link">singles</a>
+              <a href="#head-property-section" class="property-btn-link"
+                >singles</a
+              >
             </li>
             <li class="property-btn">
-              <a href="#" class="property-btn-link">bedsitters</a>
+              <a href="#head-property-section" class="property-btn-link"
+                >bedsitters</a
+              >
             </li>
             <li class="property-btn">
-              <a href="#" class="property-btn-link">1 bedrooms</a>
+              <a href="#head-property-section" class="property-btn-link"
+                >1 bedrooms</a
+              >
             </li>
             <li class="property-btn">
-              <a href="#" class="property-btn-link">2 bedrooms</a>
+              <a href="#head-property-section" class="property-btn-link"
+                >2 bedrooms</a
+              >
             </li>
             <li class="property-btn">
-              <a href="#" class="property-btn-link">studios</a>
+              <a href="#head-property-section" class="property-btn-link"
+                >studios</a
+              >
             </li>
           </ul>
         </div>
@@ -192,7 +202,7 @@
     <!-- Hero section ends here -->
 
     <!-- About section starts here -->
-    <section class="about-section">
+    <section class="about-section" id="head-about-section">
       <div class="section-title">
         <h2 class="section-title-text">About</h2>
       </div>
@@ -263,7 +273,7 @@
     <!-- About section ends here -->
 
     <!-- Property listing section starts here -->
-    <section class="property-section">
+    <section class="property-section" id="head-property-section">
       <div class="section-title">
         <h2 class="section-title-text">property listings</h2>
       </div>
@@ -873,7 +883,7 @@
     <!-- Property listing section ends here -->
 
     <!-- Amenities section starts here -->
-    <section class="amenities-section">
+    <section class="amenities-section" id="head-amenities-section">
       <div class="section-title">
         <h2 class="section-title-text">amenities</h2>
       </div>
@@ -966,7 +976,7 @@
     <!-- Amenities section eds here -->
 
     <!-- Contact section starts here -->
-    <section class="contact-section">
+    <section class="contact-section" id="head-contact-section">
       <div class="section-title">
         <h2 class="section-title-text">contact us</h2>
       </div>
@@ -974,17 +984,17 @@
         <fieldset class="form-fieldset">
           <legend>Name</legend>
           <label for="l-name">Last Name</label>
-          <input type="text">
+          <input type="text" />
           <label for="f-name">First Name</label>
-          <input type="text">
+          <input type="text" />
         </fieldset>
 
         <fieldset class="form-fieldset">
           <legend>Contact Details</legend>
           <label for="phone">Phone number</label>
-          <input type="number">
+          <input type="number" />
           <label for="email">Email</label>
-          <input type="email">
+          <input type="email" />
         </fieldset>
 
         <fieldset class="form-fieldset">
@@ -992,8 +1002,58 @@
           <label for="reasons">Your message</label>
           <textarea id="reasons" placeholder="Let us know..."></textarea>
         </fieldset>
+        <button class="contact-form-btn">Submit</button>
       </form>
     </section>
     <!-- Contact section ends here -->
+
+    <!-- footer section starts here -->
+    <section class="footer-section">
+      <div class="contact-detail">
+        <i class="fa-solid fa-phone"></i>
+        <p class="footer-phone"></p>
+        +254718764327
+      </div>
+      <div class="contact-detail">
+        <i class="fa-solid fa-envelope"></i>
+        <p class="footer-email"></p>
+        urhaven@apartments.com
+      </div>
+      <div class="contact-detail">
+        <ol class="social-footer-icons">
+          <li>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- footer section ends here -->
   </body>
 </html>
